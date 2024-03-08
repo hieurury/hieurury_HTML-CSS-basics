@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: #0008;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            width: 400px;
+            height: 300px;
+            background: red;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            animation: slide ease-in-out 10s infinite alternate;
+        }
+        img {
+            width: 400px;
+            height: 300px;
+        }
+
+        @keyframes slide {
+            0% {
+                left: 0;
+            }
+            20% {
+                left: 0;
+            }
+            40% {
+                left: -400px;
+            }
+            60% {
+                left: -400px;
+            }
+            80% {
+                left: -800px;
+            }
+            100% {
+                left: -800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+
+            <div class="container">
+                <div class="slide">
+                    <img src="https://static01.nyt.com/images/2018/05/23/dining/23fruit/23fruit-superJumbo.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://nutritionadvance.com/wp-content/uploads/2017/12/red-and-green-apples.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://www.realsimple.com/thmb/-Sj7379qKtoQkSZIxLJEKJdONls=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-fruits-are-in-season-GettyImages-1460238100-168a0940de8e4cd48a515b60dc3a5c4f.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
